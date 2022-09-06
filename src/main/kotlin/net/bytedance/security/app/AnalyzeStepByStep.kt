@@ -38,7 +38,6 @@ class AnalyzeStepByStep {
         val rulePathList = ruleList.map {
             "${getConfig().rulePath}/$it"
         }.toList()
-        val rules = Rules(rulePathList, RuleFactory())
         rules.loadRules()
         return rules
     }
